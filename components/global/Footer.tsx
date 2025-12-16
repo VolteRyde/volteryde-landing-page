@@ -9,6 +9,7 @@ import { contactItemVariants, containerVariants, copyrightVariants, leftSideVari
 export default function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-white pt-16 pb-8 px-4 sm:px-6 lg:px-8" ref={ref}>
@@ -37,8 +38,8 @@ export default function Footer() {
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Revolutionizing African education through practical design and
-              tech skills, mentorship, and opportunity.
+              Empowering sustainable movement across Africa with electric transport
+              and intelligent mobility solutions.
             </motion.p>
           </motion.div>
 
@@ -70,13 +71,6 @@ export default function Footer() {
                 whileHover={{ x: 5, color: "#4CAF50" }}
                 transition={{ duration: 0.2 }}
               >
-                University of Ghana, Legon
-              </motion.p>
-              <motion.p
-                variants={contactItemVariants}
-                whileHover={{ x: 5, color: "#4CAF50" }}
-                transition={{ duration: 0.2 }}
-              >
                 Email: info@voltryde.com
               </motion.p>
               <motion.p
@@ -84,7 +78,7 @@ export default function Footer() {
                 whileHover={{ x: 5, color: "#4CAF50" }}
                 transition={{ duration: 0.2 }}
               >
-                Phone: (123) 456-7890
+                Phone: +233 534544454
               </motion.p>
             </motion.div>
           </motion.div>
@@ -98,7 +92,7 @@ export default function Footer() {
           variants={copyrightVariants}
         >
           <p className="text-primary-100 text-sm">
-            © {new Date().getFullYear()} Voltryde. All rights reserved.
+            © {currentYear} Voltryde. All rights reserved.
           </p>
         </motion.div>
       </div>

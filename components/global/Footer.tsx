@@ -29,7 +29,14 @@ export default function Footer() {
               transition={{ duration: 0.2 }}
             >
               <Link href="/" className="">
-                <Image src={Logo} alt="Logo" />
+                <Image
+                  src={Logo}
+                  alt="Logo"
+                  width={90}
+                  height={45}
+                  className="object-contain"
+                  style={{ width: '90px', height: '45px' }}
+                />
               </Link>
             </motion.div>
             <motion.p

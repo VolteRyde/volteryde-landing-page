@@ -12,22 +12,50 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     template: "%s | Voltryde",
-    default: "Voltryde - ",
+    default: "Voltryde | Smart Electric Transport for Africa",
   },
-  description: "",
-  // metadataBase: new URL(""),
+  description: "Join the move toward greener transportation. Voltryde empowers sustainable movement across Africa with electric transport and intelligent mobility solutions. Download the app today.",
+  keywords: ["Voltryde", "Electric Bus", "Sustainable Transport", "Africa", "Ghana", "Green Energy", "Smart Mobility", "Public Transport"],
+  authors: [{ name: "Voltryde Team" }],
+  // metadataBase: new URL("https://volteryde.com"),
 
   icons: {
-    icon: "/app/favicon.ico",
-    shortcut: "/app/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "192x192",
+        url: "/android-chrome-192x192.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "512x512",
+        url: "/android-chrome-512x512.png",
+      },
+    ],
   },
   openGraph: {
-    title: "Voltryde - ",
-    description: "",
+    title: "Voltryde | Smart Electric Transport for Africa",
+    description: "Empowering sustainable movement across Africa with electric transport and intelligent mobility solutions.",
     type: "website",
     siteName: "Voltryde",
-    images: ["opengraph-image.jpg"],
+    images: [
+      {
+        url: "/assets/Logo.png", // Using the logo as a fallback OG image since opengraph-image.jpg might not exist or be generic
+        width: 800,
+        height: 600,
+        alt: "Voltryde Logo",
+      },
+    ],
+    locale: "en_US",
   },
 };
 

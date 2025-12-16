@@ -44,8 +44,13 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Link href="/" className="">
-              <Image src={Logo} alt='Logo' />
+            <Link href="/" className="flex items-center">
+              <Image
+                src={Logo}
+                alt='Voltryde Logo'
+                className="h-10 w-auto object-contain"
+                priority
+              />
             </Link>
           </motion.div>
 

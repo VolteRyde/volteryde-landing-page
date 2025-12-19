@@ -6,11 +6,11 @@ import HeroImg from "@/public/assets/heroImg.avif";
 
 export default function HeroSection() {
   const { scrollY } = useScroll();
-  
+
   // Parallax effect for background image
   const imageY = useTransform(scrollY, [0, 500], [0, 150]);
   const overlayOpacity = useTransform(scrollY, [0, 300], [0.8, 1]);
-  
+
   // Content fade out on scroll
   const contentOpacity = useTransform(scrollY, [0, 300], [1, 0]);
   const contentY = useTransform(scrollY, [0, 300], [0, -50]);
@@ -18,31 +18,31 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-[100vh] bg-white overflow-hidden pt-20">
       {/* Background Image with Parallax */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0 pt-20"
         style={{ y: imageY }}
       >
         <Image
           src={HeroImg}
-          alt="Voltryde Electric Bus"
+          alt="volteryde Electric Bus"
           className="object-cover"
           fill
           priority
         />
         {/* Gradient Overlay - Darker on Left */}
-        <motion.div 
+        <motion.div
           className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/80 to-transparent"
           style={{ opacity: overlayOpacity }}
         ></motion.div>
       </motion.div>
 
       {/* Content */}
-      <motion.div 
+      <motion.div
         className="relative z-10 h-full container mx-auto flex flex-col justify-center items-start px-4 sm:px-6 lg:px-8"
         style={{ opacity: contentOpacity, y: contentY }}
       >
         <div className="max-w-4xl mx-auto lg:mx-0">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -50,20 +50,20 @@ export default function HeroSection() {
           >
             Transforming City Travel, One Ride at a Time
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base text-white text-gray-200 mb-8 max-w-2xl leading-relaxed"
           >
-            Voltryde makes your daily commuting simple, sustainable, and
+            volteryde makes your daily commuting simple, sustainable, and
             stress-free. Hop on our electric bus built for comfort, powered by
             green energy, and designed to move Africans forward.
           </motion.p>
 
           {/* Call-to-Action Buttons */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -77,10 +77,10 @@ export default function HeroSection() {
                 href="#how-it-works"
                 className="block py-2 px-8 rounded-[32px] font-semibold text-center transition-all duration-300 text-sm sm:text-base text-black border-1 border-primary-700 bg-primary-700 hover:text-black"
               >
-                Get Voltryde
+                Get volteryde
               </Link>
             </motion.div>
-            
+
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -89,7 +89,7 @@ export default function HeroSection() {
                 href="#how-it-works"
                 className="block py-2 px-8 rounded-[32px] font-semibold text-center transition-all duration-300 text-sm sm:text-base bg-transparent text-white border-1 border-white hover:bg-white hover:text-black"
               >
-                How Voltryde Works
+                How volteryde Works
               </Link>
             </motion.div>
           </motion.div>
@@ -97,11 +97,11 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Scroll Indicator */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ 
-          duration: 0.8, 
+        transition={{
+          duration: 0.8,
           delay: 1,
           repeat: Infinity,
           repeatType: "reverse",

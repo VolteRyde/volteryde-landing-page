@@ -4,14 +4,14 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { buttonContainerVariants, buttonVariants, descriptionVariants, titleVariants } from "@/libs/animation";
 
-export default function GetVoltryde() {
+export default function GetVolteryde() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
 
   return (
     <section
-      id="get-voltryde"
+      id="get-volteryde"
       className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white"
       ref={ref}
     >
@@ -23,7 +23,7 @@ export default function GetVoltryde() {
           animate={isInView ? "visible" : "hidden"}
           variants={titleVariants}
         >
-          Get Voltryde
+          Get Volteryde
         </motion.h2>
 
         {/* Description */}
@@ -33,7 +33,7 @@ export default function GetVoltryde() {
           animate={isInView ? "visible" : "hidden"}
           variants={descriptionVariants}
         >
-          Join the move toward greener transportation. Download Voltryde and
+          Join the move toward greener transportation. Download Volteryde and
           ride the future today.
         </motion.p>
 

@@ -78,7 +78,7 @@ export default function Footer() {
                 whileHover={{ x: 5, color: "#4CAF50" }}
                 transition={{ duration: 0.2 }}
               >
-                Email: info@voltryde.com
+                Email: info@volteryde.com
               </motion.p>
               <motion.p
                 variants={contactItemVariants}
@@ -99,7 +99,7 @@ export default function Footer() {
           variants={copyrightVariants}
         >
           <p className="text-primary-100 text-sm">
-            © {currentYear} Voltryde. All rights reserved.
+            © {currentYear} Volteryde. All rights reserved.
           </p>
         </motion.div>
       </div>

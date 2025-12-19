@@ -11,12 +11,12 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Voltryde",
-    default: "Voltryde | Smart Electric Transport for Africa",
+    template: "%s | Volteryde",
+    default: "Volteryde | Smart Electric Transport for Africa",
   },
-  description: "Join the move toward greener transportation. Voltryde empowers sustainable movement across Africa with electric transport and intelligent mobility solutions. Download the app today.",
-  keywords: ["Voltryde", "Electric Bus", "Sustainable Transport", "Africa", "Ghana", "Green Energy", "Smart Mobility", "Public Transport"],
-  authors: [{ name: "Voltryde Team" }],
+  description: "Join the move toward greener transportation. Volteryde empowers sustainable movement across Africa with electric transport and intelligent mobility solutions. Download the app today.",
+  keywords: ["Volteryde", "Electric Bus", "Sustainable Transport", "Africa", "Ghana", "Green Energy", "Smart Mobility", "Public Transport"],
+  authors: [{ name: "Volteryde Team" }],
   // metadataBase: new URL("https://volteryde.com"),
 
   icons: {
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Voltryde | Smart Electric Transport for Africa",
+    title: "Volteryde | Smart Electric Transport for Africa",
     description: "Empowering sustainable movement across Africa with electric transport and intelligent mobility solutions.",
     type: "website",
-    siteName: "Voltryde",
+    siteName: "Volteryde",
     images: [
       {
         url: "/assets/Logo.png", // Using the logo as a fallback OG image since opengraph-image.jpg might not exist or be generic
         width: 800,
         height: 600,
-        alt: "Voltryde Logo",
+        alt: "Volteryde Logo",
       },
     ],
     locale: "en_US",

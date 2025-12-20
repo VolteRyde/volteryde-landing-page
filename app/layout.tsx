@@ -132,7 +132,7 @@ export default function RootLayout({
     name: "Volteryde",
     operatingSystem: "Android, iOS",
     applicationCategory: "TravelApplication",
-    description: "Book electric bus rides in Africa. Track your bus, pay securely, and enjoy eco-friendly transportation.",
+    description: "Book electric bus rides in Ghana. Track your bus, pay securely, and enjoy eco-friendly transportation.",
     offers: {
       "@type": "Offer",
       price: "0",

@@ -8,7 +8,7 @@ export default function Navbar() {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Volteryde", ariaLabel: "Volteryde Home", href: "/" },
+        { label: "Volteryde", ariaLabel: "Volteryde Home", href: "https://volteryde.org" },
         { label: "How it Works", ariaLabel: "How Volteryde Works", href: "/#how-it-works" }
       ]
     },

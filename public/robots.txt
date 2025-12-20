@@ -7,5 +7,4 @@ Allow: /
 # Sitemap location
 Sitemap: https://volteryde.com/sitemap.xml
 
-# Crawl-delay (optional, be nice to your server)
-Crawl-delay: 1
+

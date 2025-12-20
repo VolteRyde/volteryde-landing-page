@@ -1,0 +1,10 @@
+# Volteryde Robots.txt
+# https://volteryde.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://volteryde.com/sitemap.xml
+
+

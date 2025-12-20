@@ -31,10 +31,11 @@ export default function CitySpace() {
       >
         <Image
           src={cityspaceImg}
-          alt="City Skyline"
+          alt="Volteryde electric bus in city skyline - sustainable urban transportation"
           fill
           className="object-cover"
-          priority
+          sizes="100vw"
+          loading="lazy"
         />
       </motion.div>
     </section>

@@ -1,6 +1,6 @@
-# Voltryde — Landing Page
+# volteryde — Landing Page
 
-A marketing/landing site built with Next.js and Tailwind CSS. It showcases Voltryde's product features and download CTAs with rich animations courtesy of Framer Motion.
+A marketing/landing site built with Next.js and Tailwind CSS. It showcases volteryde's product features and download CTAs with rich animations courtesy of Framer Motion.
 
 This README explains how the project is organized, how to run it locally, and where to find the main pieces of code so contributors can onboard quickly.
 
@@ -62,7 +62,7 @@ Useful scripts (from `package.json`):
   - Home/
     - HeroSection.tsx  — large hero with parallax image and CTAs
     - HowItWorks.tsx   — step-by-step section (uses `mock/steps`)
-    - GetVoltryde.tsx  — download CTA buttons
+    - Getvolteryde.tsx  — download CTA buttons
     - CitySpace.tsx    — illustrative city/bus visual
     - index.tsx        — re-exports
 - libs/
